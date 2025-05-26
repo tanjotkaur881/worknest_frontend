@@ -3,7 +3,7 @@ import AppContext from './AppContext'
 import axios from 'axios'
 import { toast,Bounce } from 'react-toastify';
 const AppState = (props)=>{
-    const url="http://localhost:3000/api"
+    const url="https://worknest-backend-hpln.onrender.com/api"
     const data = 10;
     const[category,setCategory] = useState([]);
     const[token, setToken] = useState([]);
@@ -20,7 +20,7 @@ const AppState = (props)=>{
 
     useEffect(() =>{
       const Fetchalldata = async () =>{
-          const api = await axios.get("http://localhost:3000/api/worker/alldata",{
+          const api = await axios.get("https://worknest-backend-hpln.onrender.com/api/worker/alldata",{
               headers: {
                   "Content-Type" :"Application/json",
               },
@@ -34,7 +34,7 @@ const AppState = (props)=>{
 
  useEffect(() =>{
       const Fetchallempdata = async () =>{
-          const api = await axios.get("http://localhost:3000/api/employer/all",{
+          const api = await axios.get("https://worknest-backend-hpln.onrender.com/api/employer/all",{
               headers: {
                   "Content-Type" :"Application/json",
               },
@@ -50,7 +50,7 @@ const AppState = (props)=>{
  
     useEffect(() =>{
       const Fetchjobs = async () =>{
-          const api = await axios.get("http://localhost:3000/api/category/Getallcategory ",{
+          const api = await axios.get("https://worknest-backend-hpln.onrender.com/api/category/Getallcategory ",{
               headers: {
                   "Content-Type" :"Application/json",
               },
@@ -67,7 +67,7 @@ const AppState = (props)=>{
 
 useEffect(() =>{
         const Fetchcategory = async () =>{
-            const api = await axios.get("http://localhost:3000/api/category/Getallcategory ",{
+            const api = await axios.get("https://worknest-backend-hpln.onrender.com/api/category/Getallcategory ",{
                 headers: {
                     "Content-Type" :"Application/json",
                 },
@@ -105,7 +105,7 @@ useEffect(() =>{
         console.log("token", ltoken)
 
         try {
-            const response = await axios.get('http://localhost:3000/api/employer/employerprofile', {
+            const response = await axios.get('https://worknest-backend-hpln.onrender.com/api/employer/employerprofile', {
                 headers: {
                     "Content-Type": "application/json",
                     "Auth": ltoken, // Make sure `token` is defined in this scope
@@ -124,7 +124,7 @@ useEffect(() =>{
         console.log("token wordker", ltoken)
 
         try {
-            const response = await axios.get('http://localhost:3000/api/worker/workerrprofile', {
+            const response = await axios.get('https://worknest-backend-hpln.onrender.com/api/worker/workerrprofile', {
                 headers: {
                     "Content-Type": "application/json",
                     "Auth": ltoken, // Make sure `token` is defined in this scope
@@ -139,7 +139,7 @@ useEffect(() =>{
     };
 
 const Employerregister = async (name, email, password) =>{
-    const api = await axios.post("http://localhost:3000/api/employer/register", {name,email, password},
+    const api = await axios.post("https://worknest-backend-hpln.onrender.com/api/employer/register", {name,email, password},
         {
         headers: {
         'Content-Type': 'Application/json',
@@ -161,7 +161,7 @@ const Employerregister = async (name, email, password) =>{
 }  
 
 const Employerlogin = async (email, password) =>{
-    const api = await axios.post("http://localhost:3000/api/employer/login", {email, password},
+    const api = await axios.post("https://worknest-backend-hpln.onrender.com/api/employer/login", {email, password},
         {
         headers: {
         'Content-Type': 'Application/json',
@@ -195,7 +195,7 @@ const Workerregister = async ( name, email, phone, category, location, experienc
 }  
 
 const Workerlogin = async (email, password) =>{
-    const api = await axios.post("http://localhost:3000/api/worker/workerlogin", {email, password},
+    const api = await axios.post("https://worknest-backend-hpln.onrender.com/api/worker/workerlogin", {email, password},
         {
         headers: {
         'Content-Type': 'Application/json',
@@ -225,7 +225,7 @@ const Workerlogin = async (email, password) =>{
 
 const EmployerchangePassword = async (oldPassword, newPassword) => {
     try {
-      const res = await axios.put('http://localhost:3000/api/employer/Employerchangepassword',
+      const res = await axios.put('https://worknest-backend-hpln.onrender.com/api/employer/Employerchangepassword',
         { oldPassword, newPassword }, {
         
         headers: {
@@ -247,7 +247,7 @@ const EmployerchangePassword = async (oldPassword, newPassword) => {
     console.log("oldPassword, newPassword", )
     try {
       console.log(oldPassword, newPassword)
-      const res = await axios.put('http://localhost:3000/api/worker/Workerchangepassword',
+      const res = await axios.put('https://worknest-backend-hpln.onrender.com/api/worker/Workerchangepassword',
         { oldPassword, newPassword }, {
         
         headers: {
@@ -307,7 +307,7 @@ const WorkerEditprofile = async (data) => {
     const token = localStorage.getItem("token");
 
     const res = await axios.put(
-      "http://localhost:3000/api/worker/workereditprofile",
+      "https://worknest-backend-hpln.onrender.com/api/worker/workereditprofile",
       data,
       {
         headers: {
@@ -349,7 +349,7 @@ const WorkerEditprofile = async (data) => {
 const Contactus = async (name, phone, Yourmessage) =>{
 
   console.log("name, phone, Yourmessage", name, phone, Yourmessage)
-  const api = await axios.post("http://localhost:3000/api/contact/addcontact", {name, phone, Yourmessage},
+  const api = await axios.post("https://worknest-backend-hpln.onrender.com/api/contact/addcontact", {name, phone, Yourmessage},
       {
       headers: {
       'Content-Type': 'Application/json',
@@ -362,7 +362,7 @@ const Contactus = async (name, phone, Yourmessage) =>{
 const Review = async (name, rating, review) =>{
 
   console.log("name, rating, review", name, rating, review)
-  const api = await axios.post("http://localhost:3000/api/review/createReview", {name, rating, review},
+  const api = await axios.post("https://worknest-backend-hpln.onrender.com/api/review/createReview", {name, rating, review},
       {
       headers: {
       'Content-Type': 'Application/json',
@@ -374,7 +374,7 @@ const Review = async (name, rating, review) =>{
 
 const requestWorker = async (employerId, workerId) => {
     try {
-      const response = await axios.post('http://localhost:3000/api/request/requestworker', {
+      const response = await axios.post('https://worknest-backend-hpln.onrender.com/api/request/requestworker', {
         employer: employerId,
         worker: workerId,
       });
@@ -389,7 +389,7 @@ const requestWorker = async (employerId, workerId) => {
 useEffect(() => {
   const fetchRequest = async () => {
     try {
-      const response = await axios.get("http://localhost:3000/api/request/getrequestworker", {
+      const response = await axios.get("https://worknest-backend-hpln.onrender.com/api/request/getrequestworker", {
         headers: {
           "Content-Type": "application/json",
         },
