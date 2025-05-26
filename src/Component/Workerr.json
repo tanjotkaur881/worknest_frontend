@@ -1,0 +1,63 @@
+[
+    {
+    "title": "Labour",
+    "description": "Reliable and hardworking general labourers for all construction and site-related tasks.",
+    "icon": "🛒"
+  },
+  {
+    "title": "Mason",
+    "description": "Skilled masons specialize in bricklaying, plastering, & structural work for durable construction.",
+    "icon": "🧱"
+  },
+  {
+    "title": "Painter",
+    "description": "Professional painters ensuring high-quality wall finishes, interior, and exterior painting services.",
+    "icon": "🖌",
+    "highlight": true
+  },
+  {
+    "title": "Plumber",
+    "description": "Expert plumbers for seamless water supply, drainage, and plumbing system installations and repairs.",
+    "icon": "🔧"
+  },
+  {
+    "title": "Carpenter",
+    "description": "Experienced carpenters deliver customized woodwork solutions for furniture, doors, and interiors.",
+    "icon": "🪵"
+  },
+  {
+    "title": "Electrician",
+    "description": "Qualified electricians for safe electrical installations, maintenance, and fault repair services.",
+    "icon": "⚡"
+  },
+  {
+    "title": "Foreman",
+    "description": "Efficient foremen to oversee construction sites and ensure timely project completion.",
+    "icon": "👷‍♂"
+  },
+  {
+    "title": "Supervisor",
+    "description": "Responsible supervisors to monitor workers, manage tasks, and maintain workplace safety.",
+    "icon": "🦺"
+  },
+  {
+    "title": "Engineer",
+    "description": "Expert engineers providing technical solutions for design, planning, and execution of projects.",
+    "icon": "🏗"
+  },
+  {
+    "title": "Vendor",
+    "description": "Trusted vendors supplying quality materials and equipment for your construction needs.",
+    "icon": "🏭"
+  },
+  {
+    "title": "ITI/Technician",
+    "description": "Certified ITI technicians offer specialized skills for machinery maintenance and technical support.",
+    "icon": "🔩"
+  },
+  {
+    "title": "Surveyor",
+    "description": "Professional surveyors providing accurate land measurements and site assessments for construction planning.",
+    "icon": "📏"
+  }
+]

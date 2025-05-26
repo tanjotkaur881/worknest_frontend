@@ -1,0 +1,9 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.a1{ background-color: #F3F4F6;}
+.a1:hover{ background-color: #2120EA}
+.title:hover{color: white;}
+.dd{ box-shadow: -50px -50px 5px #6c818253;}
