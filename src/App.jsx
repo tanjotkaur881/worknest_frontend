@@ -38,7 +38,7 @@ function App() {
 {/* <BrowserRouter> */}
 <Routes>
   
-<Route path='/'element={<Index/>} />
+<Route path=''element={<Index/>} />
 <Route path='/Employerlogin'element={<Employerlogin />} />
 <Route path='/Employerregister'element={<Employerregister/>} />
 <Route path='/Workerlogin'element={<Workerlogin/>} />
