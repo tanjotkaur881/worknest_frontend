@@ -3,7 +3,7 @@ import './App.css'
 
 import { BrowserRouter as Router, Routes,Route, BrowserRouter } from 'react-router-dom';
 import ScrollToTop from './Component/ScrollToTop'
-import Index from './Component/Index'
+import Index from './Component/Index';
 import Employerlogin from './Component/Employerlogin'
 import Employerregister from './Component/Employerregister'
 import Mainlogin from './Component/Mainlogin';
