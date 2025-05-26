@@ -8,7 +8,6 @@ import Employerregister from './Component/Employerregister'
 import Mainlogin from './Component/Mainlogin';
 import Workerlogin from './Component/Workerlogin';
 import Workerregister from './Component/Workerregister';
-import Index from './Component';
 import AboutUs from './Component/AboutUs';
 import Static from './Component/Static';
 import Worker from './Component/Worker';
