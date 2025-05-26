@@ -62,7 +62,7 @@ const WorkerEditProfile = () => {
   useEffect(() => {
     const fetchProfile = async () => {
       try {
-        const res = await axios.get("http://localhost:3000/api/worker/workerrprofile", {
+        const res = await axios.get("https://worknest-backend-hpln.onrender.com/api/worker/workerrprofile", {
           headers: { Authorization:`Bearer ${token}`}
         });
 
