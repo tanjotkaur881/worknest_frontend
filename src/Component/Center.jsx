@@ -1,7 +1,7 @@
 import React from 'react'
 import { Briefcase, UserPlus, Search } from "lucide-react";
 import { Eye, Target } from "lucide-react";
-import Static2 from './static2';
+import Static2 from './Static2';
 import Footer from './Footer';
 import { Link } from "react-router-dom";
 
